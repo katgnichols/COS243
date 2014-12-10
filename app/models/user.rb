@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
 
     has_secure_password
 
-    validates :name, presence: true
+    validates :name, presence: true, format: { with: /\A.{1,50}\z/xi }
     validates :email,
 	presence: true,
 	format: { with: /\A         # begin of input

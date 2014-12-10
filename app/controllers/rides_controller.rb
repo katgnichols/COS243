@@ -9,4 +9,12 @@ class RidesController < ApplicationController
 		   end
 	@rides = Ride.order(ordering)
     end
+  
+  def new
+    @ride = Ride.new
+  end
+    
+  def show
+  end
+  
 end

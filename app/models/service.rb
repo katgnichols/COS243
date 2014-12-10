@@ -3,4 +3,5 @@ class Service < ActiveRecord::Base
   has_many :rides
 
   validates :church, presence: true
+  
 end
