@@ -1,7 +1,8 @@
-<%= render 'errors', object: @church %>
+<h1>Edit church</h1>
+<%= render 'errors' %>
 
 <%= form_for @church do |form| %>
     <%= render partial: 'fields', locals: { f: form } %>
 
-    <%= form.submit 'Create new church' %>
+<%= form.submit 'Update church' %>
 <% end %>
